@@ -1,0 +1,274 @@
+@import "reset.css";
+
+body {
+   padding: 100px;
+}
+
+.wrapper {
+   overflow: hidden;
+   position: relative;
+   min-height: 100%;
+   padding: 50px;
+}
+
+/*=========================================== car =============================================*/
+
+.car {
+   width: 750px;
+   height: 420px;
+   /*background-color: #dcd4d4;*/
+   position: relative;
+}
+
+/*========================================== cabine ============================================*/
+
+.cabine {
+   width: 40%;
+   height: 61.5%;
+   position: absolute;
+   right: 0;
+   top: 9%;
+   background-color: #142094;
+   border: 1px solid #000;
+   border-radius: 0% 10% 0% 0%;
+}
+
+.cabine__spoiler {
+   width: 45%;
+   height: 8%;
+   background-color: #142094;
+   border: 1px solid #000;
+   border-radius: 0% 90% 0% 0%;
+   position: absolute;
+   left: -0.5%;
+   top: -8%;
+}
+
+.car__exhaust-pipe {
+   width: 3%;
+   height: 80%;
+   background: #8d898b;
+   border: 1px solid #000;
+   position: absolute;
+   right: 40%;
+   top: 0;
+}
+
+.cabine__windshield {
+   width: 15%;
+   height: 48%;
+   background-color: #8eb2a896;
+   border: 1px solid #000;
+   border-left: none;
+   position: absolute;
+   top: 7%;
+   right: 0%;
+   z-index: 3;
+}
+
+.cabine__headlight {
+   width: 7%;
+   height: 15%;
+   border-right: 1px solid #000;
+   background: #e6e0e0;
+   position: absolute;
+   right: 0%;
+   bottom: 10%;
+}
+
+.cabine__turn-signal {
+   width: 3%;
+   height: 15%;
+   background: #f8a306;
+   position: absolute;
+   right: 7%;
+   bottom: 10%;
+}
+
+.cabine__left-border {
+   width: 15%;
+   height: 100%;
+   border-top: 1px solid #000;
+   border-left: 1px solid #000;
+   border-radius: 100% 21% 0% 100% / 20% 0% 0% 0%;
+   position: absolute;
+   left: 18%;
+   z-index: 1;
+}
+
+.cabine__door {
+   width: 55%;
+   height: 45%;
+   background-color: #142094;
+   border-left: 1px solid #000;
+   border-right: 1px solid #000;
+   border-radius: 0% 2% 2% 0%;
+   position: absolute;
+   top: 55%;
+   left: 30%;
+   z-index: 2;
+}
+
+.door__knob {
+   width: 25%;
+   height: 3%;
+   background: #000;
+   position: absolute;
+   top: 15%;
+   left: 5%;
+}
+
+.cabine__window {
+   width: 55%;
+   height: 48%;
+   background: #8eb2a896;
+   border: 1px solid #000;
+   border-radius: 25px 0 0 0;
+   position: absolute;
+   top: 7%;
+   left: 30%;
+}
+
+/*==================================== car__base ==================================================*/
+
+.car__base {
+   width: 100%;
+   height: 15%;
+   position: absolute;
+   right: 0;
+   bottom: 14.5%;
+   background-color: #2c2c2c;
+   border-radius: 0px 0px 5px 5px;
+}
+
+/*==================================== car__platform ==============================================*/
+
+.car__platform {
+   width: 35%;
+   height: 8%;
+   background: #000;
+   position: absolute;
+   left: 5%;
+   bottom: 29.5%;
+}
+
+/*==================================== car__fasteners ==============================================*/
+
+.car__fasteners {
+   width: 25%;
+   height: 8%;
+   background: #000;
+   position: absolute;
+   left: 10%;
+   bottom: 37.5%;
+}
+
+/*====================================== wheel ====================================================*/
+
+.front-wheel {
+   position: absolute;
+   right: 5%;
+   bottom: 0%;
+}
+
+.rear-wheel {
+   position: absolute;
+   left: 21%;
+   bottom: 0%;
+}
+
+.second-rear-wheel {
+   position: absolute;
+   left: 5%;
+   bottom: 0%;
+}
+
+.wheel {
+   width: 15%;
+   height: 28.71%;
+}
+
+.wheel__tires {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   background-color: #000;
+   z-index: 1;
+}
+
+.wheel__rim {
+   width: 60%;
+   height: 60%;
+   border-radius: 50%;
+   background-color: #8A8A88;
+   box-shadow: inset 0px 0px 2px 0px #d6c7c7;
+   position: absolute;
+   top: 20%;
+   left: 20%;
+   z-index: 2;
+}
+
+.wheel_hub {
+   width: 45%;
+   height: 45%;
+   border-radius: 50%;
+   background-color: #B9B6B0;
+   box-shadow: inset 0px 0px 4px 0px #000000, 1px 1px 2px 1px #B9B6B0;
+   position: absolute;
+   top: 27.5%;
+   left: 27.5%;
+   z-index: 3;
+}
+
+.wheel__bolt {
+   position: absolute;
+   width: 7%;
+   height: 7%;
+   border-radius: 50%;
+   background-color: #fff;
+   z-index: 2;
+}
+
+.wheel__bolt_one {
+   top: 20.2%;
+   left: 46.5%;
+}
+
+.wheel__bolt_two {
+   top: 28%;
+   left: 28%;
+}
+
+.wheel__bolt_three {
+   top: 28%;
+   right: 28%;
+}
+
+.wheel__bolt_four {
+   top: 46.5%;
+   left: 20.2%;
+}
+
+.wheel__bolt_five {
+   top: 46%;
+   right: 20.2%;
+}
+
+.wheel__bolt_six {
+   bottom: 28%;
+   left: 28%;
+}
+
+.wheel__bolt_seven {
+   bottom: 28%;
+   right: 28%;
+}
+
+.wheel__bolt_eiht {
+   bottom: 20.2%;
+   left: 46.5%;
+}
+
+/*========================================== footer ==============================================*/
+
+.footer {}
